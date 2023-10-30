@@ -18,7 +18,6 @@ int check_cycle(listint_t *list)
 		if (l == list)
 			return (1);
 	}
-	
 	return (0);
 }
 
