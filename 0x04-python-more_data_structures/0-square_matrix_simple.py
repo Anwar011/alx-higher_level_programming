@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-def square_matrix_simple(matrix=[]):
-    new_mat = []
-    new_mat = [[0] * len(k) for k in matrix]
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            new_mat[i][j] = matrix[i][j]**2
-    return new_mat
+def search_replace(my_list, search, replace):
+    new_list = []
+    new_list += my_list
+    for i in range(len(my_list)):
+        if my_list[i] == search:
+            new_list[i] = replace
+    return new_list
